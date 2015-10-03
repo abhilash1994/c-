@@ -18,7 +18,7 @@ void LevelOrder(Node *root) {
 	while(!Q.empty()) {
 		Node* current = Q.front();
 		Q.pop(); // removing the element at front
-		cout<<current->data<<" ";
+		cout<<current->data<<endl;
 		if(current->left != NULL) Q.push(current->left);
 		if(current->right != NULL) Q.push(current->right);
 	}
@@ -45,7 +45,7 @@ int main() {
 			A   C   Z
     */
 	Node* root = NULL;
-	root = Insert(root,'M'); root = Insert(root,'B');
+	root = Insert(root,'M'); root = Insert(root,'B');root = Insert(root,'X');root = Insert(root,'S');\
 	root = Insert(root,'Q'); root = Insert(root,'Z'); 
 	root = Insert(root,'A'); root = Insert(root,'C');
 	//Print Nodes in Level Order. 
